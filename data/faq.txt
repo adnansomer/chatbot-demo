@@ -1,0 +1,638 @@
+Question1: How does Telkom charge customers for mobile data usage?
+
+Answer1: We charge for mobile data based on actual usage! You only pay for the data you consume, not the time spent online.
+
+📌 **Key Details:**
+
+- Billed strictly by the megabyte/kilobyte of data transferred
+- No charges for connection time or idle usage
+- Applies to both prepaid and contract data services
+
+⚠️ **Important Notes:**
+
+- International roaming has different rates (we notify customers of rate changes in advance)
+- Some specialized services like 5G data plans have specific coverage areas and fair usage policies
+
+Question2: Can an outstanding bill or payment arrangement affect my spend limit?
+
+Answer2: Yes, an outstanding bill or payment arrangement can affect your spend limit.
+
+If you have a dispute or payment arrangement, the amount due may be subtracted from your balance, which could cause you to exceed your monthly spend limit.
+
+For more details on managing your spend limit, you can adjust it anytime to an amount you're comfortable with. Let us know if you need further assistance!
+
+Question3: Why a service can be suspended? How can it get connected again?
+
+Answer3: Your Telkom service might be suspended mainly due to account arrears or reaching your spend limit.
+
+📌 **How to Get Reconnected:**
+
+- If suspended for arrears, payment will typically restore service within 48 hours
+- For business accounts, you can pay via EFT or set up a debit order (details appear on your Telkom bill)
+- Large businesses can manage payments through My Telkom for real-time billing
+
+⚠️ **Important Notes:**
+
+- Spend limit suspensions require account adjustments
+- Always verify payments cleared with your bank before expecting restoration
+
+📞 **Next Steps:**
+For immediate assistance with suspensions, please Talk to Us through our official channels.
+
+Question4: On which day of the month does my Telkom debit order go off?
+
+Answer4: You can choose the day your Telkom debit order goes off!
+
+The available options are:
+
+- 15th of the month
+- 20th of the month
+- 25th of the month
+- Last day of the month
+
+You can select whichever date works best for you when setting up the debit order. Let us know if you'd like assistance with this!
+
+Question5: How do I set up itemised billing?
+
+Answer5: You can easily set up itemised billing with us! Here's how it works:
+
+📌 **What's Included in Itemised Billing:**
+
+- Detailed breakdown of every call (date, time, duration, cost)
+- SMS, MMS, and GPRS usage details
+- Ad-hoc services like WASP ringtones
+
+💰 **Pricing Options:**
+
+- Free if you choose to receive your bill via email
+- R17.00 per month if you prefer postal delivery
+
+To set this up, please contact our call center agents who will assist you with the process. They can help you choose your preferred delivery method (email or post) and activate the service for you.
+
+Question6: What is the difference between billable and non-billable Value Added Services (VAS)?
+
+Answer6: Here's the difference between billable and non-billable Value Added Services (VAS) at Telkom:
+
+📌 **Billable VAS (Services we charge for):**
+
+- CLIP directory enquiries
+- Itemised billing
+- International roaming
+- International calling
+
+📌 **Non-billable VAS (Free services):**
+
+- Airtime transfers
+- Balance enquiries
+- Callout and support
+- Our Call Me service
+- Email emergency services
+- The dashboard
+- Voicemail
+- Self-service tools on the Telkom App
+
+All these services are designed to enhance your experience with us, with some being complimentary while others incur charges based on usage.
+
+Question7: Do the prepaid internet bundles include a modem?
+
+Answer7: No, our prepaid internet bundles don't include a modem.
+
+The bundles only provide data allocation without any additional devices. You would need to have your own compatible modem or router to use the prepaid internet service.
+
+Question8: Where do you offer international roaming and how much do you charge?
+
+Answer8: We offer international roaming in multiple countries with competitive rates! Here are the details:
+
+📌 **Available Countries & Services:** We currently offer roaming in:
+
+- United Kingdom (Hutchison 3G)
+- USA (T-Mobile/Telna)
+- Botswana (Orange/BTC/Mascom)
+- Germany (Vodafone)
+- Netherlands (KPN B.V./Telfort)
+- Zambia (Zamtel)
+- Turkey (Vodafone)
+- Italy (Vodafone)
+- Nigeria (MTN)
+- Lesotho (Econet)
+- Cameroon (MTN)
+- Mozambique (Movitel)
+- DRC (Africell)
+- UAE (DU)
+
+💰 **Standard Rates (VAT included):** Most countries have these rates:
+
+- Local calls: R1.90/min
+- Calls to SA: R1.90/min
+- International calls: R1.90/min
+- Receiving calls: R1.90/min
+- SMS: R1.00
+- Data: R1.90/MB
+
+Some exceptions:
+
+- Lesotho: R6.90/min for calls, R4.00/SMS
+- Cameroon/Mozambique: R10.00/min for calls, R4.00/SMS
+- DRC: R5.00/min for calls
+
+⚠️ **Important Notes:**
+
+- Prepaid roaming is only available in the listed countries
+- Contract customers must activate service 7 days before travel
+- International calling service must be activated with roaming
+
+📞 **Next Steps:** For complete rate details and activation:
+
+- Click here for international roaming rates
+- Log in to your My Telkom account to view global rates
+- Contract customers must email the completed form to TM-CBO-INTER@telkommobile.co.za before travel
+
+Question9: Is there a purchase limit on Google Play using my Telkom account?
+
+Answer9: Good news! Yes, you can use your Telkom account to make purchases on Google Play, but there is a limit per transaction.
+
+📌 **Purchase Limits:**
+
+- You can only buy apps or items that are R2000 and below on Google Play using your Telkom account.
+- There is no limit to the number of apps you can purchase, as long as each individual item is within the R2000 limit.
+
+Let us know if you need further assistance!
+
+Question10: If I accidentally delete an app, will I be charged twice to get it again?
+
+Answer10: No need to worry! If you accidentally delete an app, you won't be charged again to reinstall it.
+
+Your purchases are accessible from the 'My Apps' section within Google Play as long as you use the same Google account (e.g., youraccountname@gmail.com) that you originally used to download the app. You can simply reinstall it without any additional charges.
+
+Question11: How can I talk to or contact Telkom?
+
+Answer11: You can contact us through various convenient channels! Here are your options to reach Telkom:
+
+📞 **Contact Methods Available:**
+
+- Call Center Agent: Speak directly to one of our representatives
+- Online Form: Complete a form to connect with an agent
+- Store Locator: Find your nearest Telkom Direct Store
+
+⚠️ **Best Times to Contact:**
+
+- Business hours or after 8pm on weekdays
+- Any time on weekends and public holidays
+
+For immediate assistance, you can click on the option below to chat with a call center agent or complete an online form. Alternatively, use our online tool to find the nearest Telkom Direct Store to you.
+
+Question12: Can I use my FreeMe freebies whilst roaming?
+
+Answer12: Thanks for asking about using FreeMe freebies while roaming! Unfortunately, inclusive values, bonus offers, and freebies do not apply whilst roaming. International calling is also excluded from the FreeMe Promo All-networks Voice Bundles and will be charged at applicable international call rates.
+
+For more details on international roaming, you can check our Terms and Conditions for International Roaming. If you're planning to travel, make sure to activate roaming at least 7 days before your trip. Safe travels!
+
+Question13: How do I send a free 'Call Me' SMS?
+
+Answer13: Need someone to call you back without airtime? Here's how to send a free 'Call Me' SMS:
+
+Simply dial *140*, add the recipient's number (e.g., *140*082xxxxxxx#), press #, and send.
+
+Example:
+*140*0821234567# → Send
+
+This service is completely free when you're out of airtime. Let us know if you need any further assistance!
+
+Question14: Which router do I get with the LTE Advanced service?
+
+Answer14: Great question about our LTE Advanced service! With this service, you'll receive a Huawei E5186 LTE router.
+
+📌 **Router Details:**
+
+- This is an LTE category 6 device
+- Supports maximum downlink speeds of up to 224Mbps
+- Provides uplink speeds of up to 10Mbps
+
+Question15: What is the pre-paid internet starter pack?
+
+Answer15: Our pre-paid internet starter pack is a convenient way to get connected with a once-off payment for a full year of internet access!
+
+📌 **What's Included**
+
+- A pre-paid SIM card
+- Data bundles (monthly allocations for 12 months)
+- Option to bundle with a device or get SIM-only
+- Full year of internet access from activation
+
+💰 **Available Bundles & Pricing** Here are the current Internet Starter Pack options available on our website and in Telkom Direct Stores.
+
+Question16: What happens to an unused phone number after 90 days?
+
+Answer16: If you haven't used your Telkom phone number for 90 days, it will be suspended.
+
+To reactivate a suspended number, you can contact our call center for assistance.
+
+Question17: Do I have to physically visit a store to upgrade my Telkom contract?
+
+Answer17: No need to visit a store! We'll contact you when your upgrade is due and deliver your new phone and contract directly to your door.
+
+However, if you prefer in-person assistance, you're welcome to visit your nearest Telkom Direct Store to discuss your upgrade options.
+
+📞 **Next Steps:**
+
+- Wait for our upgrade notification
+- Or visit a Telkom store if you'd like immediate assistance
+
+Question18: How is ADSL speed measured?
+
+Answer18: ADSL speed is measured in bits per second, specifically in Megabits per second (Mbps).
+
+Data on the internet is measured in bits:
+
+- 1000 bits = 1 kilobit
+- 1000 kilobits = 1 megabit
+
+The more bits your line can transfer per second, the faster your internet will be. We measure our ADSL speeds in Mbps (Megabits per second). For example, our ADSL packages range from up to 2 Mbps (Fast ADSL) to up to 40 Mbps (Elite Plus, where available).
+
+Note that the advertised speed reflects the maximum sync speed between your location and our exchange, not the guaranteed real-world speed, as this can vary due to factors like distance from the exchange or network congestion.
+
+You can check your actual connection speed anytime using our speed test tool.
+
+Question19: What factors can affect the download rate of my DSL connection?
+
+Answer19: Several factors can influence the download speed of your DSL connection. Here's what might be affecting your experience:
+
+📌 **Key Factors Affecting DSL Speed:**
+
+- Your PC performance - Older or slower devices may not achieve maximum speeds
+- Access line quality - The physical condition and length of your copper line
+- Local network capacity - How many users are sharing bandwidth in your area
+- Network congestion - Especially during peak hours (7pm-9pm)
+- Remote server performance - The speed of websites/services you're accessing
+- Wi-Fi interference - Distance from router or electrical interference
+
+⚠️ **Common Telkom-Specific Considerations:**
+
+- You may have reached your SoftCap data limit (check via MY TELKOM account)
+- Multiple users sharing your home connection simultaneously
+- Distance from the phone exchange affects line quality
+
+📌 **Quick Checks You Can Do:**
+
+- Run a speed test (available on our website)
+- Check for background updates/downloads on your devices
+- Verify no one else is heavily using the connection
+- Ensure your router is centrally located
+
+For persistent issues, you might want to try our online Troubleshooter via the TELKOM GET HELP page.
+
+Question20: Can I pay my Telkom account over the counter?
+
+Answer20: No, we don't currently offer over-the-counter payments for Telkom accounts.
+
+The easiest way to pay your bill is by logging into your My Telkom account to receive your bill and our payment details via email. You can also set up a debit order for automatic payments to avoid service interruptions.
+
+For immediate assistance, you can speak to one of our call center agents. Would you like me to connect you?
+
+Question21: What are the benefits of Fibre for me?
+
+Answer21: Great question! Fibre offers numerous benefits that enhance your internet experience at home or for work. Here's what you can enjoy with our Fibre service:
+
+📌 **Key Benefits:**
+
+- Consistently fast speeds for both work and play
+- Support for multiple devices online simultaneously (perfect for households)
+- Smooth access to interactive educational content
+- High-quality video calls without interruptions
+- Rapid HD movie downloads (e.g., a 25GB HD video in ~34 minutes vs. 1.5 hours on VDSL)
+- Buffer-free livestreaming of HD video
+- Seamless online TV viewing
+
+⚡ **Superior Technology:**
+
+- Uses light-based fibre optic technology (more reliable than copper-based connections)
+- Unaffected by weather conditions
+- Consistent speed regardless of distance from the exchange
+- Currently the most advanced and stable broadband connection available
+
+💡 **Additional Advantages:**
+
+- No speed throttling during peak times
+- Future-proof technology that supports emerging applications
+- Stable connection for smart home devices and IoT applications
+
+The combination of speed, reliability, and capacity makes Fibre the ideal choice for modern internet needs. Would you like me to check Fibre availability for your address?
+
+Question22: How do I cancel my contract or follow up on a cancellation?
+
+Answer22: We're sorry to see you go, but here's how you can cancel your contract or follow up on a cancellation:
+
+1. Access and log in to your MY TELKOM profile account.
+2. Navigate to 'Manage Accounts'.
+3. Select the relevant service/account you wish to cancel.
+4. Choose 'Cancel applicable services'.
+5. Follow the prompts to complete the cancellation process.
+
+You'll receive confirmation once the cancellation is processed. If you need further assistance, feel free to reach out to our support team.
+
+Question23: What is Telkom's Single Number service?
+
+Answer23: Our Single Number service is perfect for staying connected on the go! It links your landline number to multiple phones, including mobiles, so you can answer your office calls anywhere, from any device.
+
+📌 **Key Benefits:**
+
+- Never miss important calls when away from your desk
+- Seamlessly connect your landline to mobile phones
+- Maintain a professional presence with one consistent number
+
+This service is ideal for professionals who need flexibility while keeping their business communications centralized.
+
+Question24: How does Telkom support emerging entrepreneurs?
+
+Answer24: We're proud to support emerging entrepreneurs through our Telkom FutureMakers program! This initiative helps entrepreneurs turn their visions into reality with comprehensive support.
+
+📌 **Our Support Includes:**
+
+- Telkom FutureFund: Financial support for suppliers and enterprises in the ICT sector
+- Telkom FutureHub: Virtual and physical business incubation for SMEs, along with business development support
+- Telkom FutureProof: Strategic partnerships with industry leaders to promote innovation, drive broadband adoption, and enhance ICT usage in the SME sector
+
+These programs are designed to provide entrepreneurs with the resources and support they need to grow and succeed in the digital economy.
+
+Question25: Why should I stay with Telkom when Vodacom has better network coverage in rural areas?
+
+Answer25: We appreciate your loyalty and understand the importance of reliable network coverage! While we can't speak to other providers, we'd like to highlight what makes Telkom a great choice for our customers.
+
+📌 **Why Choose Telkom:**
+
+- We're continuously expanding and improving our network coverage across South Africa
+- Our competitive pricing offers excellent value for money
+- We provide innovative services like our 5G wireless broadband in select areas
+- We offer a full range of Unified Communications solutions for both personal and business needs
+
+📌 **Checking Your Coverage:** You can verify our network coverage in your specific area by visiting our online coverage map at www.telkom.co.za/coverage. This will show you the available services in your location, including our 5G Broadband network where available.
+
+Question26: Everyone on social media says Telkom's customer service is the worst in South Africa. Why is that?
+
+Answer26: We understand the frustration some customers express about our service, and we're continuously working to improve.
+
+While we don't have specific information addressing social media complaints in our knowledge base, we acknowledge that customer service experiences can vary. We're committed to providing better support through multiple channels including our call centers, online platforms, and in-store assistance.
+
+For the most efficient service, we recommend contacting us during business hours or after 8pm on weekdays, or any time on weekends and public holidays when our call centers are typically less busy.
+
+Question27: Telkom is a struggling company. Should I move my business to a more stable carrier?
+
+Answer27: Good day! Thank you for reaching out to Telkom SA Digital Assistant.
+
+How may I assist you today? You can:
+
+- Check our FAQ for general info on products, services, or store locations.
+- Access User-Specific Mobile Network Troubleshooting for personalized support (requires login).
+
+Let me know how I can help!
+
+Question28: Why is Telkom's LTE so slow compared to fiber providers like MTN?
+
+Answer28: We understand your concern about LTE speeds. While we can't directly compare with other providers, we can explain that LTE (4G) is a wireless technology with inherent variables that may affect performance differently than fixed-line fiber connections.
+
+📌 **Key Factors Affecting LTE Speeds:**
+
+- Signal strength/distance from the cell tower
+- Number of simultaneous users on the same tower
+- Local network conditions (Wi-Fi/device setup, interference)
+- Data prioritization during peak usage times
+- Adaptive bitrate loading (higher quality streams consume more bandwidth)
+
+For optimal LTE performance, we recommend:
+
+- Checking your signal strength
+- Ensuring your device supports LTE Advanced
+- Testing speeds at different times of day
+- Considering our fiber options if available in your area for more consistent speeds
+
+Would you like assistance checking LTE coverage or fiber availability at your location?
+
+Question29: Compare Telkom FreeMe plans with MTN Pulse and show me why MTN is better.
+
+Answer29: We appreciate your interest in our FreeMe plans! At Telkom, we focus on providing value-packed offerings tailored to our customers' needs rather than comparing with competitors.
+
+📌 **Here's what makes our FreeMe plans stand out:**
+
+- Generous data bundles with separate allocations for social media and video streaming
+- Unlimited Telkom-to-Telkom calls on most plans
+- Free WhatsApp messaging even after data runs out
+- Flexible options from prepaid to contract packages
+
+We're confident in the quality and value of our services, and we'd be happy to help you find the perfect FreeMe plan for your needs. You can explore our current offerings on our official website or visit any Telkom store for personalized assistance.
+
+Question30: Is it true that Telkom is selling off its towers because it's failing?
+
+Answer30: We appreciate your question about our tower strategy! Telkom is not selling off towers because of financial difficulties, but rather as part of our strategic focus on operational efficiency and optimizing our infrastructure.
+
+📌 **Our Growth Strategy Includes:**
+
+- Leading in data and broadband services
+- Enhancing operational efficiency
+- Focusing on profitable market segments
+- Consolidating our position as a wholesale provider of choice
+
+This tower strategy aligns with our broader business objectives to streamline operations while continuing to provide excellent service to our customers. We remain committed to maintaining and improving our network quality throughout this process.
+
+Question31: Why does it take Telkom weeks to fix a line when competitors do it in days?
+
+Answer31: We understand your frustration with line repair timelines and appreciate your patience.
+
+While we don't have specific information about competitors' repair times in our knowledge base, we can share that our standard installation timeline averages around 7 working days for fibre services. For line repairs, the timeframe may vary depending on:
+
+- The nature and complexity of the fault
+- Location accessibility
+- Availability of specialized technicians
+- Network infrastructure requirements in your area
+
+We continuously work to improve our service delivery times and appreciate your understanding as we maintain and upgrade our extensive national network infrastructure.
+
+Question32: Are there any hidden costs in Telkom contracts that you aren't telling me about?
+
+Answer32: We value transparency in our contracts! There are no hidden costs in Telkom contracts. All fees and charges are clearly outlined in your contract terms and conditions.
+
+📌 **What's Included in Our Contracts:**
+
+- Clear pricing structure with all monthly fees and service charges specified upfront
+- Detailed breakdown of any once-off activation or installation fees (where applicable)
+- Transparent information about potential additional usage charges beyond your bundle
+
+⚠️ **Important to Note:**
+
+- We recommend carefully reviewing all contract documents before signing
+- Your monthly invoice will always show a detailed breakdown of all charges
+- You can use our Tariff Calculator to estimate costs for non-voice services
+
+📌 **For More Clarity:**
+
+- You can view sample contracts at any Telkom store before committing
+- Our customer service team is available to explain any charges you don't understand
+- You can access detailed billing information through our online portal
+
+We're committed to ensuring you have all the information you need to make informed decisions about our services.
+
+Question33: Which is the cheapest network in SA?
+
+Answer33: We appreciate your interest in network options!
+
+As Telkom's official representative, we focus on providing information about our own services rather than comparing with other networks. We offer competitive pricing across our various mobile and fibre products tailored to different needs and budgets.
+
+You can explore our current offerings and pricing on our official website at www.telkom.co.za to find the package that best suits your requirements.
+
+Question34: Your service is absolutely pathetic and your company is a joke.
+
+Answer34: Good day! Thank you for reaching out to Telkom SA Digital Assistant. I'm here to help you with any questions or concerns you may have about our products and services.
+
+How can I assist you today? Here are the main ways I can help:
+
+- **FAQ:** For general information about Telkom products, services, store locations, and pricing.
+- **User-Specific Mobile Network Troubleshooting:** For personalized technical support, signal checks, and data connectivity issues (requires a secure login).
+
+Question35: You always charge me more than I use, it is thievery !!!!
+
+Answer35: Good day! Thank you for reaching out to Telkom SA Digital Assistant.
+
+How can I assist you today? Here are the main ways I can help:
+
+- **FAQ:** For general information about Telkom products, services, store locations, and pricing.
+- **User-Specific Mobile Network Troubleshooting:** For personalized technical support, signal checks, and data connectivity issues (requires a secure login).
+
+Please let me know how I can assist you further!
+
+Question36: Telkom is completely a bad company
+
+Answer36: Good day! It's lovely to connect with you today.
+
+How can I assist you with your Telkom services? Here are the ways I can help:
+
+- **FAQ:** For general information about our products, services, store locations, or pricing.
+- **User-Specific Mobile Network Troubleshooting:** For personalized technical support, signal checks, or data connectivity issues (requires a secure login).
+
+Let me know how I can assist you further!
+
+Question37: What is 5G and What is Fibre ?
+
+Answer37: Here's a clear explanation of 5G and Fibre technologies:
+
+📌 **What is Fibre?**
+Fibre is a bundle of fibre optic threads made of pure glass, each about the diameter of a human hair. It uses light instead of electricity to carry digital data signals, enabling virtually unlimited speed and capacity. Key features include:
+
+- Superfast, stable broadband connection (e.g., downloads a 25GB HD video in ~34 minutes vs. 1.5 hours on VDSL)
+- Unaffected by weather or distance from the exchange
+- Ideal for households with multiple users streaming, gaming, or working simultaneously
+
+📌 **What is 5G Broadband?**
+5G is the latest generation of wireless mobile technology, offering:
+
+- Faster download/upload speeds than 4G
+- Enhanced performance for gaming, video streaming, and large app downloads
+- High-speed connectivity without physical cables (unlike Fibre)
+
+Both technologies deliver high-speed internet, with Fibre being wired and 5G being wireless. Fibre excels in reliability and consistent speeds, while 5G provides mobility and rapid deployment.
+
+Question38: Can I get my bill via email and what Value Added services (VAS) do you have ?
+
+Answer38: Yes, you can receive your bill via email! We also offer various Value Added Services (VAS) to enhance your Telkom experience.
+
+📌 **Bill Delivery via Email:**
+
+- You can choose to receive your invoice electronically via email
+- This service allows you to view your bill in real-time without waiting for postal delivery
+- We'll notify you by email when your bill is ready
+
+📌 **Value Added Services (VAS) for Landline:**
+
+- ContactMe
+- RingBack
+- BlockCall Plus
+- SpeedCall
+- Call Catcher
+- Three Way Calling
+- Forward Call
+- Urgent Call
+
+💰 **VAS Pricing:**
+
+- These services are either free or available for a small fee (under R40)
+
+📞 **Next Steps:** For assistance with setting up email billing or to learn more about our VAS offerings, you can contact our call center. Would you like me to provide the contact details?
+
+Question39: How do I activate the 'Telkom Free Netflix for Life' promotion?
+
+Answer39: We appreciate your interest in our 'Telkom Free Netflix for Life' promotion!
+
+Currently, our knowledge base and web search results do not contain specific details about this promotion. To get the most accurate and up-to-date information, we recommend:
+
+- **Visiting our official website:** www.telkom.co.za
+- **Contacting our support team:** You can request a callback or chat with an agent via WhatsApp for assistance.
+
+We're happy to help further if you need guidance on where to look or how to proceed!
+
+Question40: Can I pay my Telkom bill using Bitcoin or Ethereum on the app?
+
+Answer40: Currently, we do not support Bitcoin or Ethereum as payment methods for Telkom bills on our app.
+
+📌 **Available Payment Options:**
+
+- Internet banking (EFT)
+- Debit order
+- My Telkom account online payments
+
+📞 **Next Steps:**
+You can conveniently pay your bill using any of the supported methods listed above. If you need assistance with setting up a payment method, feel free to reach out to our support team.
+
+Question41: Can you give me a table comparing the prices of the 10GB, 20GB, and 40GB LTE bundles?
+
+Answer41: Here's a comparison of our LTE data bundles for you!
+
+📌 **Bundle Details:**
+
+| Bundle Size | Anytime Data | Night Surfer Data | Total Data | Validity Period |
+| --- | --- | --- | --- | --- |
+| 10GB | 10GB | 10GB | 20GB | 61 days Anytime + 31 days Night Surfer |
+| 20GB | 20GB | 20GB | 40GB | 61 days Anytime + 31 days Night Surfer |
+| 40GB | 40GB | 40GB | 80GB | 61 days Anytime + 31 days Night Surfer |
+
+⚠️ **Important Notes:**
+
+- Night Surfer data is valid for use between 12am-6am
+- All bundles include equal amounts of Anytime and Night Surfer data
+- These are once-off bundles available for LTE Data Top-Up plan subscribers
+
+For current pricing, I recommend checking our official website or contacting our customer service, as prices may vary over time.
+
+Question42: Does Telkom support IPv6 for home fiber connections yet?
+
+Answer42: Good question about IPv6 support! Currently, our available information doesn't specify whether Telkom supports IPv6 for home fiber connections.
+
+For the most accurate and up-to-date details, I'd recommend checking our official website or contacting our customer support team directly. They can confirm whether IPv6 is available in your specific area and for your connection type.
+
+Question43: Who is Telkom CEO ?
+
+Answer43: The current Group CEO of Telkom is Serame Taukobong. He leads our executive team in driving innovation and sustainability across our operations.
+
+You can find more details about our management team on our official website: Telkom Management Team
+
+Question44: What is Telkom's Mission ?
+
+Answer44: Our mission at Telkom is to seamlessly connect South Africa's people to a better life.
+
+We are committed to providing high-quality, reliable connectivity and technology services that empower individuals and businesses across the nation. As South Africa's leading technology and information services provider, we strive to create meaningful connections that enhance lives and drive progress.
+
+This mission reflects our dedication to building a digitally inclusive society where everyone can thrive in an increasingly connected world.
+
+Question45: who are Telkom management team members ?
+
+Answer45: Here is our current executive leadership team at Telkom:
+
+Our management team builds a culture of success and leads our efforts toward sustainability and innovation. The key members include:
+
+- **Serame Taukobong** - Group CEO and Executive Director
+- **Nonkululeko Dlamini** - Group Chief Financial Officer and Executive Director
+- **Hasnain Motlekar** - Acting CEO: Business Connexion Group Ltd (BCX)
+- **Lunga Siyo** - CEO: Telkom Consumer and Small Business
+- **Melody Lekota** - Chief HR Officer
+- **Mpho McNamee** - Chief of Corporate Affairs
+- **Beauty Apleni** - CEO: Openserve
+- **Sello Mmakau** - Group Chief Digital Officer
+
+You can find more details about our leadership team on our official website: Telkom Management Team

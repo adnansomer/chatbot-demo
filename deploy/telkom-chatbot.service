@@ -1,0 +1,16 @@
+[Unit]
+Description=Telkom SA Digital Assistant (Flask + Gunicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=telkom
+Group=telkom
+WorkingDirectory=/opt/telkom-chatbot
+Environment="PATH=/opt/telkom-chatbot/.venv/bin"
+ExecStart=/opt/telkom-chatbot/.venv/bin/gunicorn -c deploy/gunicorn.conf.py "app:app"
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,23 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# local tooling / scratch
+.playwright-mcp/
+.codeartsdoer/
+*.log
+
+# throwaway screenshots taken while verifying the UI
+step*.png
+prod-*.png
+shimmer-*.png
+logo-*.png
+gif-*.png
+check-*.png
+final-*.png
+lg-*.png
+v[0-9]-*.png
+adhoc-coverage.png
+robot-zoom.png
+!static/img/telkom-logo.png

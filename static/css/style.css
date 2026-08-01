@@ -1,0 +1,615 @@
+/* ==========================================================================
+   Telkom SA Digital Assistant — chat UI
+   ========================================================================== */
+
+:root {
+  --tk-blue:        #0a97ff;
+  --tk-blue-dark:   #0080e0;
+  --tk-green:       #8cc63e;   /* logo square */
+  --tk-green-card:  #7ed321;   /* brighter lime used by the prompt cards */
+
+  --bubble-bg:      rgba(255, 255, 255, 0.20);
+  --bubble-bg-user: rgba(255, 255, 255, 0.18);
+  --field-bg:       rgba(255, 255, 255, 0.30);
+
+  --row-width:      min(1520px, 80vw);
+  --avatar:         52px;
+  --avatar-gap:     18px;
+
+  --text:           #ffffff;
+  --btn-bg:         #e9ecee;
+  --btn-fg:         #6e7c86;
+
+  --font: "Poppins", "Segoe UI Variable", "Segoe UI", -apple-system,
+          BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--tk-blue);
+  font-family: var(--font);
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.app {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------------------------------------------- brand -- */
+/* A real flex row above the chat transcript - not an overlay - so the
+   header always sits above the conversation and can never be scrolled
+   behind or overlapped by a message bubble. */
+.brand {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 30px 0 22px 44px;
+}
+
+/* The wordmark is the supplied brand asset (static/img/telkom-logo.png),
+   generated from logo-final.jpg with the blue backdrop turned into real
+   transparency, so it sits on the page blue with no seam. */
+.brand-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+/* -------------------------------------------------------------- landing -- */
+/* Two views share the shell: a centered hero ("landing") shown before the
+   first message, and the chat transcript ("chat") shown from then on. */
+.app[data-view="landing"] .brand,
+.app[data-view="landing"] .chat,
+.app[data-view="landing"] .composer {
+  display: none;
+}
+.app[data-view="chat"] .landing {
+  display: none;
+}
+
+.landing {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  overflow-y: auto;
+}
+
+.landing-inner {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-logo {
+  width: 230px;
+  height: auto;
+  display: block;
+  margin-bottom: 150px;
+}
+
+.landing-title {
+  font-size: 2.05em;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: 0 0 46px;
+}
+
+.landing-input-wrap {
+  width: min(740px, 100%);
+}
+.landing-input-wrap .input-shell { height: 58px; }
+
+.landing-suggestions {
+  width: 100%;
+  margin-top: 66px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.suggestion-card {
+  position: relative;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  background: var(--tk-green-card);
+  color: #ffffff;
+  border-radius: 18px;
+  /* generous top padding keeps the copy clear of the arrow badge, and the
+     grid stretches every card to the tallest one so the row stays even */
+  padding: 48px 20px 22px 22px;
+  font: inherit;
+  font-weight: 500;
+  font-size: .9em;
+  line-height: 1.5;
+  box-shadow: 0 0 24px rgba(126, 211, 33, 0.45),
+              0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.suggestion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(126, 211, 33, 0.6),
+              0 10px 24px rgba(0, 0, 0, 0.2);
+}
+.suggestion-card:active { transform: translateY(0); }
+
+.suggestion-arrow {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  display: grid;
+  place-items: center;
+}
+.suggestion-arrow svg { width: 13px; height: 13px; }
+
+/* ---------------------------------------------------------------- chat -- */
+.chat {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px 0 18px;
+  scroll-behavior: smooth;
+}
+
+.chat-inner {
+  width: var(--row-width);
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+/* custom scrollbar, matching the reference design */
+.chat::-webkit-scrollbar { width: 10px; }
+.chat::-webkit-scrollbar-track { background: transparent; }
+.chat::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 99px;
+  border: 3px solid var(--tk-blue);
+}
+.chat { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.55) transparent; }
+
+/* ---------------------------------------------------------------- rows -- */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--avatar-gap);
+  margin-bottom: 22px;
+  animation: rise .32s ease both;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.row.user { justify-content: flex-end; }
+
+.avatar {
+  position: relative;
+  flex: 0 0 var(--avatar);
+  width: var(--avatar);
+  height: var(--avatar);
+  border-radius: 50%;
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.10);
+  margin-top: 4px;
+}
+
+.avatar svg { width: 100%; height: 100%; display: block; }
+
+/* The bot avatar is the supplied animation. Its artwork sits off-centre on
+   the source canvas (bbox 21,56 -> 459,465 of 480x560), so it is anchored by
+   the artwork's own centre (50% / 46.5% of the frame) rather than the
+   frame's, which keeps the robot optically centred in the circle at any
+   avatar size. */
+.avatar-bot img {
+  position: absolute;
+  width: 92%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -46.5%);
+}
+
+/* -------------------------------------------------------------- bubble -- */
+.bubble {
+  background: var(--bubble-bg);
+  border-radius: 22px;
+  padding: 26px 32px;
+  color: var(--text);
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.row.bot .bubble { flex: 1 1 auto; }
+
+.row.user .bubble {
+  flex: 0 1 auto;
+  max-width: 62%;
+  background: var(--bubble-bg-user);
+  padding: 20px 30px;
+}
+
+.bubble p { margin: 0 0 14px; }
+.bubble p:last-child { margin-bottom: 0; }
+.bubble strong { font-weight: 600; }
+.bubble a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+.bubble ul,
+.bubble ol {
+  margin: 0 0 14px;
+  padding-left: 26px;
+}
+.bubble ul:last-child, .bubble ol:last-child { margin-bottom: 0; }
+.bubble li { margin: 0 0 8px; padding-left: 4px; }
+.bubble li:last-child { margin-bottom: 0; }
+.bubble ul { list-style: disc; }
+.bubble ol { list-style: decimal; }
+
+.md-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+}
+.md-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: .94em;
+}
+.md-table th,
+.md-table td {
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+  white-space: nowrap;
+}
+.md-table th { font-weight: 600; }
+.md-table tr:last-child td { border-bottom: 0; }
+
+/* ------------------------------------------------------------- map pin -- */
+.map-card {
+  max-width: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.14);
+}
+
+.map-visual {
+  position: relative;
+  height: 118px;
+  background: #dfe9d8;
+}
+
+.map-grid { width: 100%; height: 100%; display: block; }
+
+.map-pin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 32px;
+  transform: translate(-50%, -68%);
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.28));
+}
+.map-pin svg { width: 100%; height: auto; display: block; }
+
+.map-info { padding: 12px 16px 14px; }
+
+.map-info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.map-pin-icon { font-size: .95em; line-height: 1; flex: 0 0 auto; }
+
+.map-address {
+  font-weight: 600;
+  color: #16324a;
+  font-size: .96em;
+  line-height: 1.35;
+}
+
+.map-caption {
+  margin: 4px 0 0 24px;
+  color: #8a97a0;
+  font-size: .82em;
+}
+
+/* ---------------------------------------------------------------- meta -- */
+.msg-meta {
+  margin-top: 20px;
+  font-size: .92em;
+  opacity: .95;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+/* ------------------------------------------------------------- widgets -- */
+.widgets { margin-top: 20px; }
+
+.w-field { max-width: 340px; }
+
+.w-field .w-label {
+  font-weight: 600;
+  font-size: .95em;
+  margin-bottom: 10px;
+}
+
+.field-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--field-bg);
+  border-radius: 99px;
+  padding: 0 20px;
+  height: 50px;
+  transition: background .2s ease, box-shadow .2s ease;
+}
+.field-pill:focus-within { background: rgba(255,255,255,.4); box-shadow: 0 0 0 3px rgba(255,255,255,.25); }
+
+.field-pill .prefix {
+  color: #0d3a5c;
+  font-weight: 500;
+  flex: 0 0 auto;
+}
+
+.field-pill input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: .98em;
+  color: #ffffff;
+  padding: 0;
+}
+.field-pill input::placeholder { color: rgba(255, 255, 255, 0.75); }
+.field-pill.done { background: rgba(255,255,255,.22); }
+.field-pill.done input { color: #fff; opacity: .95; }
+
+/* choice / action buttons */
+.w-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pill-btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font: inherit;
+  font-size: .96em;
+  font-weight: 500;
+  border-radius: 99px;
+  padding: 14px 36px;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.pill-btn:hover:not(:disabled) { transform: translateY(-1px); background: #f5f7f8; box-shadow: 0 5px 14px rgba(0,0,0,.14); }
+.pill-btn:active:not(:disabled) { transform: translateY(0); }
+.pill-btn:disabled { opacity: .55; cursor: default; }
+
+.w-ticket-btn { margin-top: 16px; }
+
+/* ticket form */
+.w-ticket { max-width: 640px; }
+.ticket-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  padding: 16px 20px 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+.ticket-box textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+  background: transparent;
+  font: inherit;
+  font-size: .97em;
+  line-height: 1.6;
+  color: #1d2a33;
+  min-height: 96px;
+}
+.ticket-box textarea::placeholder { color: #9aa6ae; }
+.ticket-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #e7ebee;
+  margin-top: 8px;
+  padding-top: 8px;
+  color: #8a97a0;
+  font-size: .82em;
+}
+.ticket-counter { flex: 0 0 auto; }
+.ticket-hint { flex: 1 1 auto; text-align: right; }
+
+.ticket-send-btn {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: #c3c9ce;
+  color: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background .18s ease, transform .15s ease;
+}
+.ticket-send-btn svg { width: 17px; height: 17px; }
+.ticket-send-btn.active { background: #0a97ff; }
+.ticket-send-btn:hover:not(:disabled) { transform: scale(1.05); }
+.ticket-send-btn:disabled { opacity: .6; cursor: default; transform: none; }
+
+.ticket-box.done { opacity: .9; }
+
+/* ---------------------------------------------------------------- typing */
+/* While the assistant is composing, a soft shimmering waveform sits
+   directly on the page - deliberately no bubble behind it. */
+.shimmer {
+  flex: 0 1 auto;
+  width: min(560px, 74%);
+  height: 62px;
+  margin-top: -4px;
+  pointer-events: none;
+}
+.shimmer svg { width: 100%; height: 100%; display: block; overflow: visible; }
+
+.shimmer .sh {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: shimmerPulse 2.6s ease-in-out infinite;
+}
+.shimmer .s0 { animation-duration: 3.4s; animation-delay: -.2s; }
+.shimmer .s1 { animation-duration: 2.6s; animation-delay: -.9s; }
+.shimmer .s2 { animation-duration: 3.1s; animation-delay: -1.6s; }
+.shimmer .s3 { animation-duration: 2.9s; animation-delay: -.5s; }
+.shimmer .s4 { animation-duration: 3.6s; animation-delay: -2.1s; }
+
+@keyframes shimmerPulse {
+  0%, 100% { transform: translateX(-10px) scaleY(.6); opacity: .8; }
+  50%      { transform: translateX(10px)  scaleY(1.3); opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shimmer .sh { animation: none; }
+}
+
+/* ------------------------------------------------------------- composer -- */
+.composer {
+  flex: 0 0 auto;
+  padding: 10px 0 26px;
+}
+
+.composer-inner {
+  width: var(--row-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--avatar-gap);
+}
+
+.home-btn {
+  flex: 0 0 var(--avatar);
+  width: var(--avatar);
+  height: var(--avatar);
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--tk-blue);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.home-btn svg { width: 55%; height: 55%; }
+.home-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+
+.input-shell {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 26px;
+  height: 62px;
+  padding: 0 10px 0 28px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+.input-shell input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: .98em;
+  color: #22313b;
+}
+.input-shell input::placeholder { color: #b7bfc5; }
+
+.send-btn {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #c3c9ce;
+  color: #ffffff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background .18s ease, transform .15s ease;
+}
+.send-btn svg { width: 22px; height: 22px; }
+.send-btn.active { background: #96a2ab; }
+.send-btn:hover { transform: scale(1.05); }
+.send-btn:disabled { cursor: default; transform: none; }
+
+/* ------------------------------------------------------------ responsive -- */
+@media (max-width: 1100px) {
+  :root { --row-width: 94vw; --avatar: 44px; --avatar-gap: 12px; }
+  body { font-size: 16px; }
+  .brand { padding: 20px 0 16px 22px; }
+  .brand-logo { width: 118px; }
+  .bubble { padding: 20px 22px; border-radius: 18px; }
+  .row.user .bubble { max-width: 80%; }
+  .landing-logo { width: 178px; margin-bottom: 90px; }
+  .landing-title { font-size: 1.8em; margin-bottom: 34px; }
+  .landing-suggestions { grid-template-columns: repeat(2, 1fr); margin-top: 46px; }
+}
+
+@media (max-width: 640px) {
+  :root { --row-width: 96vw; }
+  body { font-size: 15px; }
+  .input-shell { height: 54px; padding-left: 20px; border-radius: 22px; }
+  .send-btn { width: 38px; height: 38px; }
+  .pill-btn { padding: 12px 24px; }
+  .w-field { max-width: 100%; }
+  .ticket-hint { display: none; }
+  .brand { padding: 16px 0 12px 18px; }
+  .brand-logo { width: 96px; }
+  .landing-logo { width: 140px; margin-bottom: 54px; }
+  .landing-title { font-size: 1.4em; margin-bottom: 26px; }
+  .landing-suggestions { grid-template-columns: 1fr; margin-top: 32px; }
+  .suggestion-card { padding: 44px 18px 18px 18px; font-size: .95em; }
+}
