@@ -224,14 +224,24 @@ body {
 
 .avatar svg { width: 100%; height: 100%; display: block; }
 
-/* The bot avatar is the supplied animation. Its artwork sits off-centre on
-   the source canvas (bbox 21,56 -> 459,465 of 480x560), so it is anchored by
-   the artwork's own centre (50% / 46.5% of the frame) rather than the
-   frame's, which keeps the robot optically centred in the circle at any
-   avatar size. */
+/* The bot avatar is the supplied animation shown on its own - no white disc
+   behind it - so the robot reads as a floating character on the page. */
+.avatar-bot {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* The artwork sits off-centre on the source canvas (bbox 21,56 -> 459,465 of
+   480x560), so it is anchored by the artwork's own centre (50% / 46.5% of
+   the frame) rather than the frame's. Being percentage based, the robot stays
+   optically centred in its slot at every avatar size. */
 .avatar-bot img {
   position: absolute;
-  width: 92%;
+  width: 128%;          /* overflows the slot on purpose: the robot reads
+                           bigger without shifting the bubble, so bot rows
+                           stay aligned with the composer below */
   height: auto;
   left: 50%;
   top: 50%;
