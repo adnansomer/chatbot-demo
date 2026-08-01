@@ -96,12 +96,22 @@ def user(text: str) -> dict:
     return {"role": "user", "text": text}
 
 
+# Captions shown above the inline inputs. The field *name* stays the API
+# contract that routes a submission, so only the caption is friendlier here;
+# mapping it centrally means every prompt and every retry path picks the
+# same wording up automatically.
+FIELD_LABELS = {
+    "customer_input_ver_code": "Verification Code",
+    "location": "Location",
+}
+
+
 def field_widget(name: str, placeholder: str = "", prefix: str = "",
                  maxlength: int = 64, inputmode: str = "text") -> dict:
     return {
         "type": "field",
         "name": name,
-        "label": name,
+        "label": FIELD_LABELS.get(name, name),
         "prefix": prefix,
         "placeholder": placeholder,
         "maxlength": maxlength,
@@ -491,7 +501,7 @@ class FlowEngine:
                               inputmode="numeric")], delay=500)]
         if s.state == S_OTP:
             return [bot(
-                "Whenever you're ready, please input the verification_code "
+                "Whenever you're ready, please input the verification code "
                 "I sent you earlier to continue.",
                 [field_widget("customer_input_ver_code", placeholder=s.otp,
                               maxlength=4, inputmode="numeric")], delay=500)]
@@ -571,7 +581,7 @@ class FlowEngine:
         return [bot(
             f"Your verification code is {s.otp}.\n"
             "\n"
-            "Please input your verification_code.",
+            "Please input your verification code.",
             [field_widget("customer_input_ver_code", placeholder=s.otp,
                           maxlength=4, inputmode="numeric")], delay=900)]
 
@@ -587,7 +597,7 @@ class FlowEngine:
                     "\n"
                     f"Your verification code is {s.otp}.\n"
                     "\n"
-                    "Please input your verification_code.",
+                    "Please input your verification code.",
                     [field_widget("customer_input_ver_code",
                                   placeholder=s.otp, maxlength=4,
                                   inputmode="numeric")], delay=600)]
